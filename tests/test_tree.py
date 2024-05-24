@@ -32,5 +32,5 @@ class TestTree:
             create_tree(levels, file_path)
 
             with open(file_path, "r") as f:
-                with open("templates\\tree_level10.txt", "r") as expected_result:
+                with open(r"templates\tree_level10.txt", "r") as expected_result:
                     assert f.read() == expected_result.read()
